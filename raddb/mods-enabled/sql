@@ -1,0 +1,9 @@
+sql {
+    driver = "rlm_sql_postgresql"
+    
+    server = "localhost"
+    port=5333
+    login = "radius"
+    password = "mysecretpassword"
+    radius_db = "radius"
+}

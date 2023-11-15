@@ -1,0 +1,12 @@
+FROM freeradius/freeradius-server:latest
+
+COPY raddb/ /etc/raddb/
+
+# Add SQL modules
+# COPY sql/ /etc/raddb/mods-enabled/
+#
+# # Expose ports for RADIUS
+# EXPOSE 1812/udp 1813/udp
+#
+# CMD ["radiusd", "-f"]
+#
